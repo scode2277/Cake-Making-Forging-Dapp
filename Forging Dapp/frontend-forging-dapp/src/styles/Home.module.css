@@ -1,0 +1,529 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin-top: 1rem;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6b55f;
+  z-index: 100;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0d76fc;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 2.5rem 0;
+  line-height: 1;
+  font-size: 2.5rem;
+  color: cadetblue;
+}
+
+.title,
+.description,
+.openseaLink {
+  text-align: center;
+  font-family: "Coiny", serif;
+  text-shadow: 4px 2px 5px #0000001f
+}
+
+.description {
+  margin: 0 0 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color:#3c8486;
+
+}
+
+.openseaLink{
+  margin: 0 0 2rem;
+  font-size: 1rem;
+
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 350px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0d76fc;
+  border-color: #0d76fc;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.connectButtonWrapper {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1100;
+}
+
+.contentWrapper {
+  margin-left: 100px;
+  flex: 1;
+}
+
+
+.layoutContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.inventoryWrapper {
+  position: fixed;
+  top: 50%;
+  left: 1rem;
+  width: fit-content;
+  max-width: 90vw;
+}
+
+.inventory {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: antiquewhite;
+  padding: 1rem;
+  border: 1px solid #e2e2e2;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  max-width: 90vw;
+  overflow-y: auto;
+}
+
+
+
+.tokenList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tokenItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  max-width: 80px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.tokenImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+
+
+.tokenQuantity {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.activitySection {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #ff979752;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  width: 100%;
+  max-width: 650px;
+  min-height: 350px;
+  overflow: auto;
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+
+.activitySectionTitle {
+  font-size: 2rem;
+  font-family: "Coiny", serif;
+
+}
+
+.activitySectionInstruction {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #555;
+  font-family: "Coiny", serif;
+
+}
+
+.activitySectionItemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-evenly;
+  max-height: 400px;
+}
+
+.activitySectionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120px;
+}
+
+.activitySectionImage {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+}
+
+.activitySectionButton {
+  padding: 8px 16px;
+  font-family: "Coiny", serif;
+  font-size: 0.83rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffea3bb0;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: auto;
+  box-shadow: 2px 1.5px 6px #cf790587;
+  text-shadow: 1.5px 0.5px 2px #00000029;
+}
+
+.activitySectionButton:hover {
+  background-color: #ca6442d1;
+}
+
+.activitySectionRequirements {
+  list-style: disc;
+  margin: 0 0 8px 20px;
+  padding: 0;
+  font-size: 0.75rem;
+  text-align: left;
+  text-shadow: 1.5px 0.5px 1px #00000029;
+}
+
+.activitySectionRequirements li {
+  margin-bottom: 4px;
+  font-family: "Coiny", serif;
+  text-shadow: 1.5px 0.5px 1px #00000029;
+  color: #9b3939;
+}
+
+.activitySectionNeeded {
+  font-family: "Coiny", serif;
+  color: #9b3939;
+}
+
+.popoverButtons {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Coiny", serif;
+}
+
+.popoverButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f515ca75;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 15px;
+  box-shadow: 1px 1.5px 4px #cf790587;
+}
+
+.popoverButton:hover {
+  background-color: #f33383e8;
+  
+}
+
+.popoverTitle {
+  font-size: 1rem;
+  font-family: "Coiny", serif;
+  color: cadetblue;
+  text-shadow: 4px 2px 5px #0000001f;
+  margin: 5px auto 15px;
+}
+
+.popover {
+  
+  background-color: #ffe373;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 20px 0px rgb(0 0 0 / 38%);
+}
+
+.popoverItem {
+  font-family: "Coiny", serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.popoverItem:hover {
+  background-color: #ffe373;
+  /* Change to your preferred highlight color */
+  transform: scale(1.05);
+  /* Slightly increase the size on hover */
+}
+
+/* Default styles for large screens */
+.topContainer {
+  position: relative;
+}
+
+.transactionStatus {
+    background-color: #f0f9ff;
+    border: 1px solid #bae6fd;
+    color: #0369a1;
+    padding: 0.75rem;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    font-family: "Coiny", serif;
+  }
+
+
+@media (max-width: 600px) {
+  
+  
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .inventory {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    margin: 0 1rem;
+    max-width: 100%;
+    z-index: 1000;
+  }
+
+  .tokenList {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+
+  .contentWrapper {
+    margin-left: auto;
+    margin-top: 150px;
+  }
+
+  .tokenImage {
+    width: 45px !important;
+    height: 45px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+  }
+
+  .topContainer {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .inventory {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    margin: 0 1rem;
+    max-width: 100%;
+    z-index: 1000;
+  }
+
+  .tokenList {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+
+  .contentWrapper {
+    margin-left: auto;
+    margin-top: 150px;
+  }
+
+  .tokenImage {
+    width: 45px !important;
+    height: 45px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+  }
+
+  .connectButtonWrapper {
+    position: fixed;
+    margin-top: 130px;
+    text-align: center;
+  }
+
+
+}
+
+@media (max-height: 850px) {
+  .inventory {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    margin: 0 1rem;
+    max-width: 100%;
+    z-index: 1000;
+  }
+
+  .tokenList {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+  }
+
+  .contentWrapper {
+    margin-left: auto;
+    margin-top: 150px;
+    flex-wrap: wrap;
+  }
+
+  .tokenImage {
+    width: 45px !important;
+    height: 45px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+  }
+
+  .connectButtonWrapper {
+    position: fixed;
+    margin-top: 130px;
+    text-align: center;
+  }
+}
+
+/* If both width is below 600px AND height is below 850px, lay out tokens horizontally */
+@media (max-width: 600px) and (max-height: 850px) {
+  .tokenList {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 590px) {
+
+
+  .contentWrapper {
+    margin-left: auto;
+    margin-top: 210px;
+  }
+
+  .connectButtonWrapper {
+    position: fixed;
+    margin-top: 220px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .contentWrapper {
+    margin-left: auto;
+    margin-top: 310px;
+  }
+
+  .connectButtonWrapper {
+    position: fixed;
+    margin-top: 320px;
+    text-align: center;
+  }
+
+}

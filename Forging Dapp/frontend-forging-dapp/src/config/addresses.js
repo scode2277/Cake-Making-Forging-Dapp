@@ -1,0 +1,6 @@
+
+export const CONTRACTS = {
+    ERC1155Token: "0xB8f43056B93744e6b2A9F6331646D561A34F25A8",
+    ForgingContract: "0x1AE6C646ED74B65af20f55b070eEdbd3229f77CB",
+  };
+  
